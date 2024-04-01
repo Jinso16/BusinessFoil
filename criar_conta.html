@@ -3,7 +3,7 @@
         <meta charset="UTF-8">
         <meta name="description" content="Crie seu portifólio online">
 
-        <title>login</title>
+        <title>Criar conta</title>
     </head>
 
     <style>
@@ -29,7 +29,7 @@
         .canva {
             display: flex;
             justify-content: center;
-            height: 95%;
+            height: 1635px;
 
         }
 
@@ -48,7 +48,7 @@
 
             align-self: center;
 
-            height: 75%;
+            height: 1410px;
             width: 40%;
         }
 
@@ -57,33 +57,14 @@
             font-weight:900;
         }
 
-        .input_username {
+        .inputs {
             width: 80%;
-            height: 10%;
+            height: 70px;
             border: 0px;
             border-radius: 8px;
 
             padding-left: 15px;
-
-            font-family: 'Courier New', Times, serif;
-            font-size:x-large;
-            font-weight:600;
-
-            color: #3b3a39;
-
-            border: 2px;
-            border-style: solid;
-            border-color: #ebebeb;
-        }
-
-        .input_password {
-            width: 80%;
-            height: 10%;
-            border: 0px;
-            border-radius: 8px;
-
-            margin-top: 50px;
-            padding-left: 15px;
+            margin-bottom: 50px;
 
             font-family: 'Courier New', Times, serif;
             font-size:x-large;
@@ -104,13 +85,13 @@
             font-weight: 600;
 
             width: 40%;
-            height: 10%;
+            height: 70px;
 
             border: 2px;
             border-color: #b4967a;
             border-radius: 8px;
             border-style: solid;
-            margin-top: 50px;
+
         }
 
         .input_submit:hover {
@@ -121,14 +102,23 @@
             font-weight: 600;
 
             width: 40%;
-            height: 10%;
+            height: 70px;
 
             border: 2px;
             border-color: #b4967a;
             border-radius: 8px;
             border-style: solid;
+        }
 
-            margin-top: 50px;
+        .insta {
+            
+        }
+        .meta {
+            
+        }
+        .google {
+            margin-left: 25px;
+            margin-right: 25px;
         }
 
     </style>
@@ -144,16 +134,25 @@
 
             <div class="dados">
                 <br>
-                <p>Entrar</p>
+                <p>Criar Conta</p>
 
-                <input type="text" class="input_username" placeholder="Username/email">
+                <input type="text" class="inputs" placeholder="Nome">
+                <input type="text" class="inputs" placeholder="Sobrenome">
+                <input type="text" class="inputs" placeholder="Username">
+                <input type="text" class="inputs" placeholder="E-mail">
+                <input type="text" class="inputs" placeholder="Confirmar e-mail">
+                <input type="text" class="inputs" placeholder="Senha">
+                <input type="text" class="inputs" placeholder="Confrimar senha">
+                <input type="text" class="inputs" placeholder="Número de telefone">
 
-                <input type="password" class="input_password" placeholder="Senha">
-
-                <input type="submit" value="ENTRAR" class="input_submit">
+                <input type="submit" value="CRIAR CONTA" class="input_submit">
                 
                 <br>
                 <h2 style="font-weight:600;">Outros métodos:</h2>
+                
+                <input type="image" img src="imagens/instagram.png" alt="" width="8%" class="insta">
+                <input type="image" img src="imagens/google.png" alt="" width="7%" class="google">
+                <input type="image" img src="imagens/meta.png" alt="" width="7%" class="meta">
                 
             </div>
 
