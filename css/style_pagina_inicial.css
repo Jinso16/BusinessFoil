@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.body {
+    margin: 0;
+    font-family: 'Courier Prime', Times, serif;
+    color: #3b3a39;
+}
+
+.lower {
+    background-color: #D1B7A1;
+    height: 30%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    align-content: center;
+}
+
+.upper {
+    background-color: #F6F0EC;
+    height: 65%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.page_title {
+    font-size: 80;
+    font-weight: 800;
+    margin-top: 180;
+}
+
+.page_upper_desc {
+    font-size: 30;
+    margin-bottom: 200;
+    text-align: center;
+    font-weight: 400;
+}
+
+.lower_left {
+    margin-left: 15%;
+}
+
+.lower_right {
+    margin-right: 15%;
+}
+
+.input_entrar {
+    background-color:#F6F0EC;
+    border: 2px;
+    border-color: #ebebeb;
+    border-radius: 10px;
+    border-style: solid;
+    height: 100px;
+    width: 300px;
+    font-family: 'Courier Prime', Times, serif;
+    font-size: x-large;
+    font-weight: 600;
+    color: #3b3a39;
+}
+
+.input_entrar:hover {
+    background-color:#ece3dd;
+    border: 2px;
+    border-color: #ebebeb;
+    border-radius: 10px;
+    border-style: solid;
+    height: 100px;
+    width: 300px;
+    font-family: 'Courier Prime', Times, serif;
+    font-size: x-large;
+    font-weight: 600;
+    color: #3b3a39;
+}
+
+.input_criar_conta {
+    background-color:#F6F0EC;
+    border: 2px;
+    border-color: #ebebeb;
+    border-radius: 10px;
+    border-style: solid;
+    height: 100px;
+    width: 300px;
+    font-family: 'Courier Prime', Times, serif;
+    font-size: x-large;
+    font-weight: 600;
+    color: #3b3a39;
+}
+
+.input_criar_conta:hover {
+    background-color:#ece3dd;
+    border: 2px;
+    border-color: #ebebeb;
+    border-radius: 10px;
+    border-style: solid;
+    height: 100px;
+    width: 300px;
+    font-family: 'Courier Prime', Times, serif;
+    font-size: x-large;
+    font-weight: 600;
+    color: #3b3a39;
+}
+
+.txt_entrar {
+    margin: 0;
+    font-size: 24;
+    text-align: center;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.txt_novo {
+    margin: 0;
+    font-size: 24;
+    text-align: center;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.cabecalho {
+    display: grid;
+    grid-template-columns: 90% 9%;
+
+    height: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: #F6F0EC;
+    font-family: 'Courier Prime', Times, serif;
+    font-size: small;
+    color: #3b3a39;
+
+    align-content: center;
+}
+
+.cab_left {
+    align-self: center;
+}
+
+.cab_right {
+    display:grid;
+    grid-template-columns: 90% 10%;
+
+    align-content: center;
+    text-align: right;
+}
+
+.cab_right_left {
+    padding-right: 15px;
+}
+
+.cab_right_right {
+    margin-top: 5px;
+}
+
+.icone {
+    width: 44px;
+    border-radius: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #3b3a39;
+}
+
+a:hover {   
+    text-decoration: none;
+    color: #D1B7A1;
+}
+
+.lower2 {
+    background-color: #D1B7A1;
+    height: 950px;
+
+    display: grid;
+    grid-template-columns: 57% 43%;
+}
+
+.lower2_title {
+    font-size: 80;
+    font-weight: 800;
+
+    margin-left: 80px;
+    margin-top: 80px;
+}
+
+.lower2_desc {
+    font-size: 30;
+    font-weight: 400;
+
+    margin-left: 80px;
+    margin-bottom: 50px;
+}
+
+.btn1 {
+    margin-left: 80px;
+    margin-bottom: 40px;
+    width: 870px;
+    height: 100px;
+    font-family: 'Courier Prime', Times, serif;
+    font-size: 30;
+    font-weight: 600;
+    color: #3b3a39;
+    background-color:#F6F0EC;
+    border: 2px;
+    border-radius: 10px;
+    border-color:#ebebeb;
+    border-style: solid;
+}
+
+.btn1:hover {
+    margin-left: 80px;
+    margin-bottom: 40px;
+    width: 870px;
+    height: 100px;
+    font-family: 'Courier Prime', Times, serif;
+    font-size: 30;
+    font-weight: 600;
+    color: #3b3a39;
+    background-color:#ece3dd;
+    border: 2px;
+    border-radius: 10px;
+    border-color:#ebebeb;
+    border-style: solid;
+}
+
+.preview_img {
+    margin-top: 80px;
+    border-radius: 10px;
+    height: 770;
+}

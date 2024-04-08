@@ -4,132 +4,31 @@
         <meta name="description" content="Crie seu portifólio online">
 
         <title>Página Inicial</title>
+
+        <link rel="stylesheet" href="../css/style_pagina_inicial.css">
     </head>
 
-    <style>
-
-        .body {
-            margin: 0;
-            font-family: 'Courier New', Times, serif;
-            color: #3b3a39;
-        }
-
-        .lower {
-            background-color: #D1B7A1;
-            height: 30%;
-            display: grid;
-            grid-template-columns: 50% 50%;
-            justify-items: center;
-            align-content: center;
-        }
-
-        .upper {
-            background-color: #F6F0EC;
-            height: 70%;
-            display: grid;
-            justify-items: center;
-            align-items: center;
-        }
-
-        h1 {
-            font-size: 80;
-            font-weight: 800;
-            margin-top: 180;
-        }
-
-        h2 {
-            font-size: 30;
-            margin-bottom: 200;
-            text-align: center;
-            font-weight: 600;
-        }
-
-        .lower_left {
-            margin-left: 15%;
-        }
-
-        .lower_right {
-            margin-right: 15%;
-        }
-
-        .input_entrar {
-            background-color:#F6F0EC;
-            border: 2px;
-            border-color: #ebebeb;
-            border-radius: 10px;
-            border-style: solid;
-            height: 100px;
-            width: 300px;
-            font-family: 'Courier New', Times, serif;
-            font-size: x-large;
-            font-weight: 600;
-            color: #3b3a39;
-        }
-
-        .input_entrar:hover {
-            background-color:#ece3dd;
-            border: 2px;
-            border-color: #ebebeb;
-            border-radius: 10px;
-            border-style: solid;
-            height: 100px;
-            width: 300px;
-            font-family: 'Courier New', Times, serif;
-            font-size: x-large;
-            font-weight: 600;
-            color: #3b3a39;
-        }
-
-        .input_criar_conta {
-            background-color:#F6F0EC;
-            border: 2px;
-            border-color: #ebebeb;
-            border-radius: 10px;
-            border-style: solid;
-            height: 100px;
-            width: 300px;
-            font-family: 'Courier New', Times, serif;
-            font-size: x-large;
-            font-weight: 600;
-            color: #3b3a39;
-        }
-
-        .input_criar_conta:hover {
-            background-color:#ece3dd;
-            border: 2px;
-            border-color: #ebebeb;
-            border-radius: 10px;
-            border-style: solid;
-            height: 100px;
-            width: 300px;
-            font-family: 'Courier New', Times, serif;
-            font-size: x-large;
-            font-weight: 600;
-            color: #3b3a39;
-        }
-
-        .txt_entrar {
-            margin: 0;
-            font-size: 24;
-            text-align: center;
-            font-weight: bold;
-            color: #ffffff;
-        }
-
-        .txt_novo {
-            margin: 0;
-            font-size: 24;
-            text-align: center;
-            font-weight: bold;
-            color: #ffffff;
-        }
-
-    </style>
-
     <body class="body">
+        <div class="cabecalho">
+            <div class="cab_left">
+                <h1>BusinessFoil</h1>
+            </div>
+            
+            <div class="cab_right">
+                <div class="cab_right_left">
+                    <a href="file:///C:/Users/jvmichelon/Documents/Tecnico/HTML/htmls/entrar.html"><h2>Entrar</h2></a>
+                </div>
+                
+                <div class="cab_right_right">
+                    <a href="file:///C:/Users/jvmichelon/Documents/Tecnico/HTML/htmls/entrar.html"><img src="../imagens/icone.jpg" alt="sem_foto" class="icone"></a>
+                </div>
+                
+            </div>
+        </div>
+
         <div class="upper">
-            <h1>BusinessFoil</h1>
-            <h2>Crie seu próprio <br> portifólio online</h2>
+            <h1 class="page_title">BusinessFoil</h1>
+            <h2 class="page_upper_desc">Crie seu próprio <br> portifólio online</h2>
         </div>
     
         <div class="lower">
@@ -143,6 +42,21 @@
                 <h3 class="txt_novo">(É novo?)</h3>
                 <br>
                 <input type="button" value="Criar Conta" class="input_criar_conta">
+            </div>
+        </div>
+
+        <div class="lower2">
+            <div>
+                <h1 class="lower2_title">Crie o seu próprio portifólio pessoal</h1>
+                <h2 class="lower2_desc">Divulgue para as pessoas <br> sua arte, trabalho, perfil <br> ou que mais quiser!</h2>
+
+                <input class="btn1" type="button" value="CRIAR UM PORTIFÓLIO"><br>
+                <input class="btn1" type="button" value="MEUS PORTIFÓLIOS"><br>
+                <input class="btn1" type="button" value="OUTROS PORTIFÓLIOS">
+            </div>
+
+            <div>
+                <img class="preview_img" src="../imagens/preview.png" alt="preview_portf">
             </div>
         </div>
 
