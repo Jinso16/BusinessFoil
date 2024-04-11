@@ -5,6 +5,7 @@
 
         <title>Criar conta</title>
 
+        <script src="../javascript/script.js"></script>
         <link rel="stylesheet" href="../css/style_criar_conta.css">
     </head>
 
@@ -21,16 +22,18 @@
                 <br>
                 <p>Criar Conta</p>
 
-                <input type="text" class="inputs" placeholder="Nome">
-                <input type="text" class="inputs" placeholder="Sobrenome">
-                <input type="text" class="inputs" placeholder="Username">
-                <input type="text" class="inputs" placeholder="E-mail">
-                <input type="text" class="inputs" placeholder="Confirmar e-mail">
-                <input type="password" class="inputs" placeholder="Senha">
-                <input type="password" class="inputs" placeholder="Confrimar senha">
-                <input type="text" class="inputs" placeholder="Número de telefone">
+                <form>
+                    <input type="text" class="inputs" id="nome" placeholder="Nome" required>
+                    <input type="text" class="inputs" id="sobrenome" placeholder="Sobrenome" required>
+                    <input type="text" class="inputs" id="username" placeholder="Username" required>
+                    <input type="text" class="inputs" id="email" placeholder="E-mail" required>
+                    <input type="text" class="inputs" id="con_email" placeholder="Confirmar e-mail" required>
+                    <input type="password" class="inputs" id="senha" placeholder="Senha" required>
+                    <input type="password" class="inputs" id="con_senha" placeholder="Confrimar senha" required>
+                    <input type="text" class="inputs" id="telefone" placeholder="Número de telefone" required>
 
-                <input type="submit" value="CRIAR CONTA" class="input_submit">
+                    <input type="submit" value="CRIAR CONTA" class="input_submit" onclick="SignUp()">
+                </form>
                 
                 <br>
                 <h2 style="font-weight:600;">Outros métodos:</h2>

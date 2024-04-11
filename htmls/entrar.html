@@ -6,6 +6,7 @@
         <title>Entrar</title>
     </head>
 
+    <script src="../javascript/script.js"></script>
     <link rel="stylesheet" type="text/css"  href="../css/style_entrar.css">
 
     <body>
@@ -21,11 +22,11 @@
                 <br>
                 <p>Entrar</p>
 
-                <input type="text" class="input_username" placeholder="Username/email">
+                <input type="text" class="input_username" id="username" placeholder="Username/email">
 
-                <input type="password" class="input_password" placeholder="Senha">
+                <input type="password" class="input_password" id="senha" placeholder="Senha">
 
-                <input type="submit" value="ENTRAR" class="input_submit">
+                <input type="submit" value="ENTRAR" class="input_submit" onclick="login()">
                 
                 <br>
                 <h2 style="font-weight:600;">Outros métodos:</h2>
