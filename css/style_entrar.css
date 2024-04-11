@@ -61,11 +61,38 @@ p {
     font-size:x-large;
     font-weight:600;
 
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+
     color: #3b3a39;
 
     border: 2px;
     border-style: solid;
     border-color: #ebebeb;
+}
+
+.input_username:focus {
+    width: 80%;
+    height: 70px;
+    border: 0px;
+    border-radius: 8px;
+
+    padding-left: 15px;
+
+    font-family: 'Courier Prime', Times, serif;
+    font-size:x-large;
+    font-weight:600;
+
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+
+    color: #3b3a39;
+
+    border: 2px;
+    border-style: solid;
+    border-color: #3b3a39;
 }
 
 .input_password {
@@ -82,11 +109,40 @@ p {
     font-size:x-large;
     font-weight:600;
 
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+
     color: #3b3a39;
 
     border: 2px;
     border-style: solid;
     border-color: #ebebeb;
+}
+
+.input_password:focus {
+    width: 80%;
+    height: 70px;
+    border: 0px;
+    border-radius: 8px;
+
+    margin-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    font-family: 'Courier Prime', Times, serif;
+    font-size:x-large;
+    font-weight:600;
+
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+
+    color: #3b3a39;
+
+    border: 2px;
+    border-style: solid;
+    border-color: #3b3a39;
 }
 
 .input_submit {
@@ -95,6 +151,10 @@ p {
     font-family: 'Courier Prime', Times, serif;
     font-size: x-large;
     font-weight: 600;
+
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
 
     width: 40%;
     height: 70px;
@@ -133,4 +193,17 @@ p {
 .google {
     margin-left: 25px;
     margin-right: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: #3b3a39;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+a:hover {   
+    text-decoration: none;
+    color: #D1B7A1;
 }

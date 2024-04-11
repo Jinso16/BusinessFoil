@@ -145,3 +145,16 @@ p {
     margin-left: 25px;
     margin-right: 25px;
 }
+
+a {
+    text-decoration: none;
+    color: #3b3a39;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+a:hover {   
+    text-decoration: none;
+    color: #D1B7A1;
+}

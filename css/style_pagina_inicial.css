@@ -56,6 +56,10 @@
     font-size: x-large;
     font-weight: 600;
     color: #3b3a39;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    
 }
 
 .input_entrar:hover {
@@ -84,6 +88,9 @@
     font-size: x-large;
     font-weight: 600;
     color: #3b3a39;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
 }
 
 .input_criar_conta:hover {
@@ -159,6 +166,9 @@
 a {
     text-decoration: none;
     color: #3b3a39;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
 }
 
 a:hover {   
@@ -204,6 +214,9 @@ a:hover {
     border-radius: 10px;
     border-color:#ebebeb;
     border-style: solid;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
 }
 
 .btn1:hover {
