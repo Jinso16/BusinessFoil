@@ -63,7 +63,7 @@
 }
 
 .input_entrar:hover {
-    background-color:#ece3dd;
+    background-color:#D1B7A1;
     border: 2px;
     border-color: #ebebeb;
     border-radius: 10px;
@@ -73,7 +73,7 @@
     font-family: 'Courier Prime', Times, serif;
     font-size: x-large;
     font-weight: 600;
-    color: #3b3a39;
+    color: #ffffff;
 }
 
 .input_criar_conta {
@@ -94,7 +94,7 @@
 }
 
 .input_criar_conta:hover {
-    background-color:#ece3dd;
+    background-color:#D1B7A1;
     border: 2px;
     border-color: #ebebeb;
     border-radius: 10px;
@@ -104,7 +104,7 @@
     font-family: 'Courier Prime', Times, serif;
     font-size: x-large;
     font-weight: 600;
-    color: #3b3a39;
+    color: #ffffff;
 }
 
 .txt_entrar {
@@ -227,8 +227,8 @@ a:hover {
     font-family: 'Courier Prime', Times, serif;
     font-size: 30;
     font-weight: 600;
-    color: #3b3a39;
-    background-color:#ece3dd;
+    color: #ffffff;
+    background-color:#D1B7A1;
     border: 2px;
     border-radius: 10px;
     border-color:#ebebeb;
