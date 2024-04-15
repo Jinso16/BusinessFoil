@@ -7,22 +7,38 @@ body {
 }
     
 .cabecalho {
+    display: grid;
+    grid-template-columns: 93% 7%;
+
     height: 5%;
     padding-left: 1%;
+    padding-right: 1%;
     background-color: #F6F0EC;
     font-family: 'Courier Prime', Times, serif;
     font-size: small;
     color: #3b3a39;
 
-    display: flex;
-    align-items: center;
+    align-content: center;
+}
+
+.cab_left {
+    align-self: center;
+}
+
+.cab_right {
+    align-content: center;
+    text-align: right;
+}
+
+.cab_right_left {
+
+    padding-top: 2px;
 }
 
 .canva {
     display: flex;
     justify-content: center;
     height: 95%;
-
 }
 
 .dados {
@@ -167,8 +183,8 @@ p {
 }
 
 .input_submit:hover {
-    background-color: #c5ac94;
-    color: #ffffff ;
+    background-color: #F6F0EC;
+    color: #D1B7A1 ;
     font-family: 'Courier Prime', Times, serif;
     font-size: x-large;
     font-weight: 600;
@@ -185,14 +201,35 @@ p {
 }
 
 .insta {
-    
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
 }
+
+.insta:hover {
+    width: 9%; 
+}
+
 .meta {
-    
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
 }
+
+.meta:hover {
+    width: 9%;
+}
+
 .google {
     margin-left: 25px;
     margin-right: 25px;
+
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.google:hover {
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 9%;
 }
 
 a {
