@@ -35,9 +35,10 @@ function login() {
     var senha = document.getElementById("senha").value;
 
     var correct_username = localStorage.getItem("username")
+    var correct_email = localStorage.getItem("email")
     var correct_senha = localStorage.getItem("senha")
 
-    if (correct_username == username && correct_senha == senha){
+    if (correct_username == username || correct_email == username && correct_senha == senha){
         alert ("Entrou!")
     }
     else {
