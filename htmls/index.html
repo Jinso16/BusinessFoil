@@ -1,69 +1,67 @@
-<html lang="pt-BR">
+<html>
     <head>
-        <meta charset="URT-8">
-        <meta name="description" content="Site para criar seu portifólio">
-        <title>Potifólio</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Crie seu portifólio online">
+
+        <title>Página Inicial</title>
+
+        <link rel="stylesheet" href="../css/style_pagina_inicial.css">
     </head>
 
-    <body style="color: #3b3a39; background-color: #D1B7A1;">
-        <div style="display: grid; grid-template-rows: 96% 2% 2%; font-family: 'Courier New', Times, serif;">
-            <div style="height: 100%; border-bottom: 20px; display: grid; grid-template-columns: 33% 33% 33%;">
-                <div style="align-self: center;">
-                    <center>
-                        <img src="imagens/FundoVertical.png" alt="" style="width: 20%;">
-                        <br>
-                        <img src="imagens/FundoVertical.png" alt="" style="width: 20%;">
-                    </center>
-                </div>
-                <div style="font-size: large; height: 100%; width: 100%;background-color:#e6e0dc; border: #3b3a39; border-radius: 10px; box-shadow: 0px 0px 12px 12px #a18167;">
-                    <br>
-                    <h1 style="text-align: center;">BERNARDO MOSSI </h1>
-                    <br>
-                    <h2 style="text-align: center; ">Pássaro Dark Souls:</h2>
-                    <center>
-                        <a href = "https://www.instagram.com/p/CoP6ItnLPDG/"> <img src="imagens/passaro.png" alt="HTML5 Icon" style="width: 80%; border-radius: 10px"> </a>
-                    </center>
-                    <br>
-
-                    <center>
-                        <img src="imagens/linha.png" alt="linha" style="width: 100%;">
-                    </center>
-
-                    <h1 style="text-align: center;">JOÃO MICHELON </h1>
-                    <br>
-                    <h2 style="text-align: center;">Acloudyskye Overflow:</h2>
-                    <center>
-                        <a href="https://www.instagram.com/p/C3JHGPrvdY5/?img_index=2"> <img src="imagens/acloudyskye.png" alt="acloudyskye" style="width: 80%; border-radius: 10px; margin-bottom: 10%;"></a>
-                    </center>
-                </div>
-                <div style="align-self: center;">
-                    <center>
-                        <img src="imagens/FundoVertical.png" alt="" style="width: 20%;">
-                        <br>
-                        <img src="imagens/FundoVertical.png" alt="" style="width: 20%;">
-                    </center>
-                </div>
-
-            </div>
-                <br><br>
-            <div>
-
-            </div>
-
-            <div style="background-color: #eee9e5; box-shadow: 0 0 12px 12px #a18167; margin-bottom: -24; margin-right: -8; margin-left: -8; display: grid; grid-template-columns: 33% 33% 33%;">
+    <body class="body">
+        <div class="cabecalho">
+            <div class="cab_left">
+                
                 <div>
-                    <h3 style="text-align: left; margin-left: 20px;">Bernardo Mossi e João Vitor Michelon</h3>
-                </div>
-
-                <div>
-                    <h3 style="text-align: center;"> - <3 - </h3>
-                </div>
-
-                <div>
-                    <h3 style="text-align: right; margin-right: 20px;">CETEC - 2024    </h3>
+                    <a href="../htmls/criar_conta.html"><h1>BusinessFoil</h1></a>
                 </div>
             </div>
-
+            
+            <div class="cab_right">
+                <div class="cab_right_left">
+                    <a href="../htmls/entrar.html"><h2>Entrar</h2></a>
+                </div>
+                
+                <div class="cab_right_right">
+                    <a href="../htmls/entrar.html"><img src="../imagens/icone.jpg" alt="sem_foto" class="icone"></a>
+                </div>
+                
+            </div>
         </div>
+
+        <div class="upper">
+            <h1 class="page_title">BusinessFoil</h1>
+            <h2 class="page_upper_desc">Crie seu próprio <br> portifólio online</h2>
+        </div>
+    
+        <div class="lower">
+            <div class="lower_left">
+                <h3 class="txt_entrar">(Já tem conta?)</h3>
+                <br>
+                <a href="../htmls/entrar.html"><input type="button" value="Entrar" class="input_entrar"></a>
+            </div>
+
+            <div class="lower_right">
+                <h3 class="txt_novo">(É novo?)</h3>
+                <br>
+                <a href="../htmls/criar_conta.html"><input type="button" value="Criar Conta" class="input_criar_conta"></a>
+            </div>
+        </div>
+
+        <div class="lower2">
+            <div>
+                <h1 class="lower2_title">Crie o seu próprio portifólio pessoal</h1>
+                <h2 class="lower2_desc">Divulgue para as pessoas <br> sua arte, trabalho, perfil <br> ou que mais quiser!</h2>
+
+                <input class="btn1" type="button" value="CRIAR UM PORTIFÓLIO"><br>
+                <input class="btn1" type="button" value="MEUS PORTIFÓLIOS"><br>
+                <input class="btn1" type="button" value="OUTROS PORTIFÓLIOS">
+            </div>
+
+            <div>
+                <img class="preview_img" src="../imagens/preview.png" alt="preview_portf">
+            </div>
+        </div>
+
     </body>
 </html>
