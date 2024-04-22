@@ -142,6 +142,7 @@
     display: grid;
     grid-template-columns: 12% 88%;
     align-self: center;
+    align-items: center;
 }
 
 .cab_right {
@@ -241,4 +242,59 @@ a:hover {
     margin-top: 80px;
     border-radius: 10px;
     height: 770;
+}
+
+.search {
+    width: 0px;
+    height: 28px;
+
+    margin-bottom: 6px;
+    border-radius: 10px;
+    border:1px;
+    border-color: #cec1b6;
+    border-style: solid;
+
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+    outline: none;
+
+    background: url(../imagens/lupa.png) no-repeat;
+    background-size: 15px;
+    background-position: center;
+    background-position-x: 8px;
+
+    padding-left: 30px;    
+    padding-top: 3px;
+
+    font-family: 'Courier Prime', Times, serif;
+    font-size: 16;
+    font-weight: 600;
+    
+}
+
+::-webkit-input-placeholder {
+    color: #5a5957;
+}
+
+.search:focus {
+    width: 300px;
+    height: 28px;
+
+    margin-bottom: 6px;
+    border-radius: 10px;
+    border:1px;
+    border-color: #bba089;
+    border-style: solid;
+    color: #3b3a39;
+}
+
+.search:hover {
+    border-radius: 10px;
+    border:1px;
+    border-color: #3b3a39;
+    border-style: solid;
+
+    background-position: center;
+    background-position-x: 7px;
+    background-size: 17px;
 }
