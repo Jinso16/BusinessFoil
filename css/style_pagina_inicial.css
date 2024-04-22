@@ -250,7 +250,7 @@ a:hover {
 
     margin-bottom: 6px;
     border-radius: 10px;
-    border:1px;
+    border:2px;
     border-color: #cec1b6;
     border-style: solid;
 
@@ -282,7 +282,7 @@ a:hover {
 
     margin-bottom: 6px;
     border-radius: 10px;
-    border:1px;
+    border:2px;
     border-color: #bba089;
     border-style: solid;
     color: #3b3a39;
@@ -290,7 +290,7 @@ a:hover {
 
 .search:hover {
     border-radius: 10px;
-    border:1px;
+    border:2px;
     border-color: #3b3a39;
     border-style: solid;
 
