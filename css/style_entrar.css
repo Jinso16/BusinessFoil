@@ -10,9 +10,9 @@ body {
     display: grid;
     grid-template-columns: 93% 7%;
 
-    height: 5%;
-    padding-left: 1%;
-    padding-right: 1%;
+    height: 45px;
+    padding-left: 15px;
+    padding-right: 15px;
     background-color: #F6F0EC;
     font-family: 'Courier Prime', Times, serif;
     font-size: small;
@@ -56,7 +56,7 @@ body {
 
     align-self: center;
 
-    height: 75%;
+    height: 78%;
     width: 40%;
 }
 

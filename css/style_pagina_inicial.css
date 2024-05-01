@@ -127,9 +127,9 @@
     display: grid;
     grid-template-columns: 90% 9%;
 
-    height: 5%;
-    padding-left: 1%;
-    padding-right: 1%;
+    height: 45px;
+    padding-left: 15px;
+    padding-right: 15px;
     background-color: #F6F0EC;
     font-family: 'Courier Prime', Times, serif;
     font-size: small;
@@ -158,12 +158,14 @@
 }
 
 .cab_right_right {
-    margin-top: 5px;
+    margin-top: 8px;
 }
 
 .icone {
-    width: 44px;
+    width: 40px;
     border-radius: 100%;
+
+    background-color: #D1B7A1;
 }
 
 a {
@@ -254,8 +256,8 @@ a:hover {
     border-color: #cec1b6;
     border-style: solid;
 
-    -webkit-transition: 0.7s;
-    transition: 0.7s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
     outline: none;
 
     background: url(../imagens/lupa.png) no-repeat;

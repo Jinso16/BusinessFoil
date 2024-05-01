@@ -6,6 +6,7 @@
         <title>Página Inicial</title>
 
         <link rel="stylesheet" href="css/style_pagina_inicial.css">
+        <script src="javascript/script.js"></script>
     </head>
 
     <body class="body">
@@ -21,13 +22,12 @@
             
             <div class="cab_right">
                 <div class="cab_right_left">
-                    <a href="htmls/entrar.html"><h2>Entrar</h2></a>
+                    <a onclick="isLogged()"><h2 id="entrar_cab">Entrar</h2></a>
                 </div>
                 
                 <div class="cab_right_right">
-                    <a href="htmls/entrar.html"><img src="imagens/icone.jpg" alt="sem_foto" class="icone"></a>
+                    <a onclick="isLogged()"><img src="https://api.dicebear.com/8.x/thumbs/svg?seed=null" alt="sem_foto" class="icone" id="foto_perfil"></a>
                 </div>
-                
             </div>
         </div>
 
@@ -64,6 +64,16 @@
                 <img class="preview_img" src="imagens/preview.png" alt="preview_portf">
             </div>
         </div>
+
+        <script>
+            var type = localStorage.getItem('type')
+            var seed = localStorage.getItem('seed')
+
+            if (localStorage.getItem('isLogged') == "true") {
+                document.getElementById("entrar_cab").innerHTML = localStorage.getItem('username')
+                document.getElementById("foto_perfil").src = "https://api.dicebear.com/8.x/" + type + "/svg?seed=" + seed + "&backgroundColor[]&fontWeight=700"
+            }
+        </script>
 
     </body>
 </html>

@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    margin: 0px;
+    font-family: 'Courier Prime', Times, serif;
+    color: #3b3a39;
+    background-color: #D1B7A1;
+}
+
+.cabecalho {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    height: 45px;
+    background-color: #F6F0EC;
+
+    padding-left: 15px;
+    padding-right: 15px;
+
+    align-content: center;
+    font-size: small;
+}
+
+.perfil_canva {
+    display: grid;
+    grid-template-rows: 65% 35%;
+
+    width: 800px;
+    height: 750px;
+
+    margin: 60px auto;
+    background-color: #F6F0EC;
+
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 30px 10px #a18167;
+}
+
+.upper_canva {
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.thumb_img {
+    background-color: #a18167;
+    border-radius: 10px;
+}
+
+.infos {
+    display: grid;
+    grid-template-columns: 70% 30%;
+
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.infos_left {
+}
+
+.infos_right {
+    justify-self: end;
+
+    margin-top: 20px;
+
+}
+
+.edit_perfil {
+    width: 180px;
+    height: 40px;
+    border-radius: 15px;
+
+    padding-top: 5px;
+
+    border: 2px solid #D1B7A1;
+
+    font-family: 'Courier Prime', Times, serif;
+    font-weight: 700;
+    font-size: 16px;
+
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.edit_perfil:hover {
+    background-color: #D1B7A1;
+    color: #ffffff;
+}
+
+.icone {
+    width: 33%;
+    margin-top: -70px;
+
+    border-radius: 100%;
+    background-color: #D1B7A1;
+}
+
+.username {
+    font-size: 25px;
+}
+
+.arroba {
+    color: #787574;
+    font-size: 18px;
+    margin-top: -20px;
+
+    margin-bottom: 10px;
+}
+
+.ingressou {
+    color: #3b3a39;
+    font-size: 18px;
+}
+
+.seguidores {
+    color: #3b3a39;
+    font-size: 18px;
+    margin-top: -10px;
+}
+
+.lower_canva {
+    position: relative;
+    margin: 0px 30px 0px 30px;
+
+    align-content: center;
+}
+
+.lower_title {
+    position: absolute;
+    top: 0;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.princ_card {
+    width: 145px;
+    height: 145px;
+    background-color: #D1B7A1;
+
+    border: 2px #a18167 solid;
+
+    border-radius: 10px;
+
+    font-family: 'Courier Prime', Times, serif;
+    font-size: 20px;
+    color: #ffffff;
+
+    -webkit-transition: 0.5s;
+}
+
+.princ_card:hover {
+    width: 155px;
+    height: 155px;
+
+    border: 2px #a18167 solid;
+}
+
+.cards {
+    
+    width: 145px;
+    height: 145px;
+    background-color: #D1B7A1;
+
+    border: 2px #a18167 solid;
+    margin-left: -40px;
+
+    border-radius: 10px;
+
+    font-family: 'Courier Prime', Times, serif;
+    font-size: 20px;
+    color: #ffffff;
+
+    -webkit-transition: 0.5s;
+}
+
+.cards:hover {
+    width: 155px;
+    height: 155px;
+
+    border: 2px #a18167 solid;
+}
+
+.ver_todos {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 20px;
+    margin-right: 25px;
+    font-size: 18px;;
+}
+
+.perfil_canva2 {
+    display: grid;
+    grid-template-rows: 65% 35%;
+
+    width: 800px;
+    height: 750px;
+
+    margin: 60px auto;
+    background-color: #F6F0EC;
+
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 30px 10px #a18167;
+}
+
+.editor {
+    padding-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;;
+    align-items: center;
+}
+
+.label {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.input_imagem {
+    margin-bottom: 100px;
+
+    font-family: 'Courier Prime', Times, serif;
+    font-size: 15px;
+}
+
+.input {
+    width: 550px;
+    height: 50px;
+
+    border-radius: 10px;
+    border: 2px solid #ebebeb;
+
+    margin-bottom: 30px;
+    padding-left: 15px;
+    padding-top: 5px;
+
+    font-family: 'Courier Prime', Times, serif;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.salvar {
+    background-color: #D1B7A1;
+    margin-top: 16px;
+    width: 400px;
+    height: 80px;
+
+    padding-top: 5px;
+
+    font-family: 'Courier Prime', Times, serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+
+    border-radius: 15px;
+    border: 2px solid #D1B7A1;
+
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.salvar:hover {
+    background-color: #F6F0EC;
+    color: #3b3a39;
+
+    border: 2px solid #D1B7A1;
+}
+
+.tipos_button {
+    width: 520px;
+    height: 50px;
+
+    padding-left: 15px;
+    padding-top: 5px;
+
+    font-family: 'Courier Prime', Times, serif;
+    font-size: 20px;
+    font-weight: 700;   
+
+    background-color: #ffffff;
+    text-align: left;
+
+    border-radius: 10px;
+    border: 2px solid #ebebeb;
+
+    color: #787574
+}
+
+.menu_tipos {
+    display: none;
+    flex-direction: column;
+
+    width: 520px;
+    background-color: #ffffff;
+
+    text-align: center;
+
+    border-radius: 10px;
+}
+
+.escolhas {
+    height: 20px;
+    padding: 10px;
+    padding-top: 15px;
+
+    border: 1px solid #ebebeb;
+}
+
+a {
+    text-decoration: none;
+    color: #3b3a39;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+a:hover {   
+    text-decoration: none;
+    color: #D1B7A1;
+}

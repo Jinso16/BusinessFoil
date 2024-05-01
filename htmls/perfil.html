@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu perfil</title>
+
+    <script src="../javascript/script.js"></script>
+    <link rel="stylesheet" href="../css/style_perfil.css">
+</head>
+
+<body>
+    <div class="cabecalho">
+        <a href="../index.html"><h1>BusinessFoil</h1></a>
+    </div>
+
+    <div class="perfil_canva" id="canva">
+        <div class="upper_canva">
+            <div class="thumb_img">
+                
+            </div>
+
+            <div class="infos">
+                <div class="infos_left">
+                    <img src="https://api.dicebear.com/8.x/initials/svg?seed=Joao Michelon&backgroundColor[]&fontWeight=700" alt="sem_foto" id="foto_perfil" class="icone">
+                    <h1 id="username" class="username"></h1>
+                    <h1 id="arroba" class="arroba"></h1>
+                    <h1 class="ingressou" id="ingressou"></h1>
+                    <h1 class="seguidores" id="social"></h1>
+                </div>
+                <div class="infos_right">
+                    <input onclick="editProfileScreen()" type="button" value="Editar perfil" class="edit_perfil">
+                </div>
+            </div>
+        </div>
+
+        <div class="lower_canva">
+            <h1 class="lower_title">Principais portifólios: </h1>
+
+            <button class="princ_card">PORT1</button> 
+            <button class="cards">PORT2</button> 
+            <button class="cards">PORT3</button> 
+            <button class="cards">PORT4</button> 
+            <button class="cards">PORT5</button> 
+            <button class="cards">PORT6</button> 
+
+            <a href=""><h1 class="ver_todos">Ver todos...</h1></a>
+        </div>
+    </div>
+
+    <div class="perfil_canva2" id="editor" style="display: none;">
+        <div class="editor">
+            <h1 class="title_editor">Editar perfil</h1>
+
+            <label class="label" for="imagem">Imagem:</label>
+            <input class="input_imagem" type="file" id="imagem" accept="image/*">
+
+            <input class="input" type="text" placeholder="Novo Nome" id="nome">
+            <input class="input" type="text" placeholder="Novo Username" id="nome">
+
+            <input class="input" type="text" placeholder="Nova Seed de Imagem" id="seed">
+            <input class="input" type="text" placeholder="Novo Tipo de Imagem" id="tipo">
+
+            <!-- <button onclick="openMenu()" class="tipos_button" id="tipos">Novo Tipo de Imagem</button>
+            <div id="menu_tipos" class="menu_tipos">
+                <a onclick="closeMenu()" class="escolhas" id="esc">Pixel Art</a>
+                <a onclick="closeMenu()" class="escolhas" id="esc">Initials</a>
+                <a onclick="closeMenu()" class="escolhas" id="esc">Robots</a>
+                <a onclick="closeMenu()" class="escolhas" id="esc">Emojis</a>
+            </div> -->
+
+            <button type="button" class="salvar" id="salvar" >Salvar</button>
+        </div>
+    </div>
+
+    <script>
+        var type = localStorage.getItem('type')
+        var seed = localStorage.getItem('seed')
+        document.getElementById("foto_perfil").src = "https://api.dicebear.com/8.x/" + type + "/svg?seed=" + seed + "&backgroundColor[]&fontWeight=700"
+        
+        document.getElementById("username").innerHTML = localStorage.getItem('username')
+        document.getElementById("arroba").innerHTML = "@"+localStorage.getItem('username')
+
+        document.getElementById("ingressou").innerHTML = "ingressou: "+localStorage.getItem('ingressou')
+
+        function formatarNumeroAbreviado(numero) {
+            var abreviacoes = ['', 'k', 'mi', 'bi', 'tri'];
+            var abreviacaoIndex = Math.floor(Math.log10(numero) / 3);
+            var numeroAbreviado = numero / Math.pow(10, abreviacaoIndex * 3);
+            return numeroAbreviado.toFixed(1) + ' ' + abreviacoes[abreviacaoIndex];
+        }
+
+        var seguindo = localStorage.getItem('seguindo')
+        var seguidores = localStorage.getItem('seguidores')
+
+        if (seguidores > 9999) {
+            seguidores = formatarNumeroAbreviado(seguidores)
+        }
+
+        if (seguindo > 9999) {
+            seguindo = formatarNumeroAbreviado(seguindo)
+        }
+
+        if (localStorage.getItem('seguidores') != null && localStorage.getItem('seguindo') != null) {   
+            document.getElementById("social").innerHTML = seguindo+" seguindo"+" | "+seguidores+" seguidores"
+        }
+        else{
+            localStorage.setItem('seguindo', 0)
+            localStorage.setItem('seguidores', 0)
+        }
+    </script>
+</body>
+
+</html>

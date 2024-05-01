@@ -27,6 +27,11 @@ function SignUp() {
         localStorage.setItem('email', email)
         localStorage.setItem('senha', senha)
         localStorage.setItem('telefone', tel)
+        localStorage.setItem('seed', nome)
+        localStorage.setItem('type', 'initials')
+        localStorage.setItem('ingressou', moment().format('DD/MM/YYYY'))
+        localStorage.setItem('seguindo', 0)
+        localStorage.setItem('seguidores', 0)
     }
 }
 
@@ -40,10 +45,35 @@ function login() {
 
     if (correct_username == username || correct_email == username && correct_senha == senha){
         alert ("Entrou!")
+
+        localStorage.setItem('isLogged', true)
     }
     else {
         alert("Usuário/senha incorreto.")
     }
+}
+
+function isLogged() {
+    if (localStorage.getItem('isLogged') == "true") {
+        window.location.href = 'htmls/perfil.html'
+    }
+    else {
+        window.location.href = 'htmls/entrar.html'
+    }
+}
+
+function editProfileScreen() {
+    document.getElementById('canva').style.display = 'none'
+    document.getElementById('editor').style.display = 'block'
+}
+
+function openMenu() {
+    document.getElementById("menu_tipos").style.display = "flex";
+}
+
+function closeMenu() {
+    document.getElementById("esc")
+    document.getElementById("menu_tipos").style.display = "none";
 }
 
 
