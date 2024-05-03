@@ -36,7 +36,7 @@
             <h2 class="page_upper_desc">Crie seu próprio <br> portifólio online</h2>
         </div>
     
-        <div class="lower">
+        <div class="lower" id="lower">
             <div class="lower_left">
                 <h3 class="txt_entrar">(Já tem conta?)</h3>
                 <br>
@@ -72,7 +72,10 @@
             if (localStorage.getItem('isLogged') == "true") {
                 document.getElementById("entrar_cab").innerHTML = localStorage.getItem('username')
                 document.getElementById("foto_perfil").src = "https://api.dicebear.com/8.x/" + type + "/svg?seed=" + seed + "&backgroundColor[]&fontWeight=700"
+
+                document.getElementById('lower').style.display = 'none'
             }
+            
         </script>
 
     </body>
