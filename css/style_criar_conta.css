@@ -13,7 +13,8 @@ body {
     position: fixed;
 
     width: 98.5%;
-    height: 45px;
+    height: 43px;
+    padding-top: 2px;
     padding-left: 15px;
     padding-right: 15px;
     background-color: #F6F0EC;
@@ -34,7 +35,6 @@ body {
 }
 
 .cab_right_left {
-    padding-top: 2px;
 }
 
 .icone {

@@ -130,7 +130,8 @@
     position: fixed;
 
     width: 98.5%;
-    height: 45px;
+    height: 37px;
+    padding-top: 5px;
     padding-left: 15px;
     padding-right: 15px;
     background-color: #F6F0EC;
@@ -161,11 +162,11 @@
 }
 
 .cab_right_right {
-    margin-top: 8px;
+    margin-top: 5px;
 }
 
 .icone {
-    width: 40px;
+    width: 38px;
     border-radius: 100%;
 
     background-color: #D1B7A1;
