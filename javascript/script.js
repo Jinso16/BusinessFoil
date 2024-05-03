@@ -67,13 +67,4 @@ function editProfileScreen() {
     document.getElementById('editor').style.display = 'block'
 }
 
-function openMenu() {
-    document.getElementById("menu_tipos").style.display = "flex";
-}
-
-function closeMenu() {
-    document.getElementById("esc")
-    document.getElementById("menu_tipos").style.display = "none";
-}
-
 

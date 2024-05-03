@@ -127,6 +127,9 @@
     display: grid;
     grid-template-columns: 90% 9%;
 
+    position: fixed;
+
+    width: 98.5%;
     height: 45px;
     padding-left: 15px;
     padding-right: 15px;

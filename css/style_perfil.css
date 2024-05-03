@@ -208,13 +208,48 @@ body {
     display: flex;
     flex-direction: column;
 
-    width: 100%;;
-    align-items: center;
+    width: 100%;
+}
+
+.fechar {
+    align-self: start;
+    margin-left: 20px;
+
+    background-color: #D1B7A1;
+    border: 2px solid #D1B7A1;
+    border-radius: 8px;
+
+    width: 40px;
+    height: 40px;
+
+    padding-top: 3px;
+
+    color: #ffffff;
+    font-family: 'Courier Prime', Times, serif;
+    font-weight: 400;
+    font-size: 24px;
+
+    -webkit-transition: 0.5s;
+
+}
+
+.fechar:hover {
+    background-color: #F6F0EC;
+    color: #3b3a39;
+
+    border: 2px solid #D1B7A1;
+}
+
+.title_editor {
+    margin-top: -14px;
+    align-self: center;
 }
 
 .label {
     font-size: 20px;
     font-weight: 700;
+
+    align-self: center;
 }
 
 .input_imagem {
@@ -222,6 +257,8 @@ body {
 
     font-family: 'Courier Prime', Times, serif;
     font-size: 15px;
+
+    align-self: center;
 }
 
 .input {
@@ -238,6 +275,8 @@ body {
     font-family: 'Courier Prime', Times, serif;
     font-size: 20px;
     font-weight: 700;
+
+    align-self: center;
 
 }
 
@@ -259,6 +298,8 @@ body {
 
     -webkit-transition: 0.5s;
     transition: 0.5s;
+
+    align-self: center;
 }
 
 .salvar:hover {
