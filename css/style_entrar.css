@@ -44,6 +44,8 @@ body {
     
     justify-content: center;
     align-items: center;
+
+    min-height: 850px;
     height: 850px;
 }
 
@@ -62,6 +64,7 @@ body {
 
     align-self: center;
 
+    min-height: 700px;
     height: 700px;
     width: 50%;
 }
@@ -258,5 +261,14 @@ a:hover {
 
     .cab_right {
         margin-right: 2vh;
+    }
+
+    .canva {
+        align-items: center;
+        height: 100%;
+    }
+
+    .dados {     
+        width: 60%;
     }
 }
