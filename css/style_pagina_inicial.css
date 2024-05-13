@@ -1,175 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+.desc {
+    font-size: calc(10px + calc(.5vw + 0.3vh));
+    font-weight: 300;
+
+
+}
+
+.businessfoil {
+    font-size: calc(15px + calc(3.2vw + 1.2vh));
+}
+
 .body {
     margin: 0;
     font-family: 'Courier Prime', Times, serif;
-    color: #3b3a39;
-}
-
-.lower {
-    background-color: #D1B7A1;
-    height: 30%;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    justify-items: center;
-    align-content: center;
-}
-
-.upper {
     background-color: #F6F0EC;
-    height: 65%;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-}
-
-.page_title {
-    font-size: 80;
-    font-weight: 800;
-    margin-top: 180;
-}
-
-.page_upper_desc {
-    font-size: 30;
-    margin-bottom: 200;
-    text-align: center;
-    font-weight: 400;
-}
-
-.lower_left {
-    margin-left: 15%;
-}
-
-.lower_right {
-    margin-right: 15%;
-}
-
-.input_entrar {
-    background-color:#F6F0EC;
-    border: 2px;
-    border-color: #ebebeb;
-    border-radius: 10px;
-    border-style: solid;
-    height: 100px;
-    width: 300px;
-    font-family: 'Courier Prime', Times, serif;
-    font-size: x-large;
-    font-weight: 600;
     color: #3b3a39;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    outline: none;
-    
-}
-
-.input_entrar:hover {
-    background-color:#D1B7A1;
-    border: 2px;
-    border-color: #ebebeb;
-    border-radius: 10px;
-    border-style: solid;
-    height: 100px;
-    width: 300px;
-    font-family: 'Courier Prime', Times, serif;
-    font-size: x-large;
-    font-weight: 600;
-    color: #ffffff;
-}
-
-.input_criar_conta {
-    background-color:#F6F0EC;
-    border: 2px;
-    border-color: #ebebeb;
-    border-radius: 10px;
-    border-style: solid;
-    height: 100px;
-    width: 300px;
-    font-family: 'Courier Prime', Times, serif;
-    font-size: x-large;
-    font-weight: 600;
-    color: #3b3a39;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    outline: none;
-}
-
-.input_criar_conta:hover {
-    background-color:#D1B7A1;
-    border: 2px;
-    border-color: #ebebeb;
-    border-radius: 10px;
-    border-style: solid;
-    height: 100px;
-    width: 300px;
-    font-family: 'Courier Prime', Times, serif;
-    font-size: x-large;
-    font-weight: 600;
-    color: #ffffff;
-}
-
-.txt_entrar {
-    margin: 0;
-    font-size: 24;
-    text-align: center;
-    font-weight: 400;
-    color: #ffffff;
-}
-
-.txt_novo {
-    margin: 0;
-    font-size: 24;
-    text-align: center;
-    font-weight: 400;
-    color: #ffffff;
 }
 
 .cabecalho {
-    display: grid;
-    grid-template-columns: 90% 9%;
+    display: flex;
 
     position: fixed;
 
-    width: 98.5%;
-    height: 37px;
+    width: 100%;
+    min-height: 25px;
+    height: 5vh;
     padding-top: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
     background-color: #F6F0EC;
     font-family: 'Courier Prime', Times, serif;
     font-size: small;
     color: #3b3a39;
 
     align-content: center;
+    justify-content: space-between;
 }
 
 .cab_left {
-    display: grid;
-    grid-template-columns: 12% 88%;
-    align-self: center;
+    display: flex;
     align-items: center;
+    font-size: calc(10px + 0.4vh);
+
+    margin-left: 1vw;
 }
 
 .cab_right {
-    display:grid;
-    grid-template-columns: 90% 10%;
-
-    align-content: center;
+    display:flex;
+    align-items: center;
     text-align: right;
-}
 
-.cab_right_left {
-    padding-right: 15px;
-}
+    font-size: calc(10px + 0.4vh);
 
-.cab_right_right {
-    margin-top: 5px;
+    margin-right: 1vw;
 }
 
 .icone {
-    width: 38px;
+    width: calc(20px + 1.5vh);;
+    object-fit: contain;
+    margin-bottom: 5px;
+    margin-left: 10px;
     border-radius: 100%;
 
     background-color: #D1B7A1;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    background-color: #F6F0EC;
+    align-items: center;
+    justify-content: center;
+}
+
+.cadastro {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: #D1B7A1;
+    height: 30vh;
+}
+
+.button {
+    width: 20vw;
+    height: 10vh;
+    
+    font-weight: 600;
+
+    background-color: #F6F0EC;
+    border: 1px solid #d3cecb;
+    border-radius: 8px;
+
+    cursor: pointer;
 }
 
 a {
@@ -183,78 +106,24 @@ a {
 a:hover {   
     text-decoration: none;
     color: #D1B7A1;
+    cursor: pointer;
 }
 
-.lower2 {
-    background-color: #D1B7A1;
-    height: 950px;
-
-    display: grid;
-    grid-template-columns: 57% 43%;
-}
-
-.lower2_title {
-    font-size: 80;
-    font-weight: 800;
-
-    margin-left: 80px;
-    margin-top: 80px;
-}
-
-.lower2_desc {
-    font-size: 30;
-    font-weight: 400;
-
-    margin-left: 80px;
-    margin-bottom: 50px;
-}
-
-.btn1 {
-    margin-left: 80px;
-    margin-bottom: 40px;
-    width: 870px;
-    height: 100px;
+button {
+    margin: 0;
     font-family: 'Courier Prime', Times, serif;
-    font-size: 30;
-    font-weight: 600;
+    font-size: calc(1vw + 0.5vh);
+    letter-spacing: 4px;
     color: #3b3a39;
-    background-color:#F6F0EC;
-    border: 2px;
-    border-radius: 10px;
-    border-color:#ebebeb;
-    border-style: solid;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    outline: none;
 }
 
-.btn1:hover {
-    margin-left: 80px;
-    margin-bottom: 40px;
-    width: 870px;
-    height: 100px;
-    font-family: 'Courier Prime', Times, serif;
-    font-size: 30;
-    font-weight: 600;
-    color: #ffffff;
-    background-color:#D1B7A1;
-    border: 2px;
-    border-radius: 10px;
-    border-color:#ebebeb;
-    border-style: solid;
-}
-
-.preview_img {
-    margin-top: 80px;
-    border-radius: 10px;
-    height: 770;
-}
 
 .search {
     width: 0px;
-    height: 28px;
-
+    height: 80%;
     margin-bottom: 6px;
+    margin-left: 10px;
+
     border-radius: 10px;
     border:2px;
     border-color: #cec1b6;
@@ -303,4 +172,20 @@ a:hover {
     background-position: center;
     background-position-x: 7px;
     background-size: 17px;
+}
+
+@media (max-width: 600px) {
+    .button {
+        padding-right: 3vw;
+        padding-left: 3vw; 
+        font-size: calc(1.3vh + 0.5vw);
+    }
+
+    .cadastro {
+        flex-direction: column;
+    }
+
+    .button {
+        width: 40vw;
+    }
 }
