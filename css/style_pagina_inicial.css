@@ -120,7 +120,9 @@ button {
 
 .search {
     width: 0px;
-    height: 80%;
+    height: 3.5vh;
+    min-height: 25px;
+    max-height: 40px;
     margin-bottom: 6px;
     margin-left: 10px;
 
@@ -174,7 +176,7 @@ button {
     background-size: 17px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 980px) {
     .button {
         padding-right: 3vw;
         padding-left: 3vw; 
