@@ -190,4 +190,12 @@ button {
     .button {
         width: 40vw;
     }
+
+    .cab_left {
+        margin-left: 2vh;
+    }
+
+    .cab_right {
+        margin-right: 2vh;
+    }
 }
