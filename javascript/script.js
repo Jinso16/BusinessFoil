@@ -67,4 +67,9 @@ function editProfileScreen() {
     document.getElementById('editor').style.display = 'block'
 }
 
+function fecharEdit() {
+    document.getElementById('canva').style.display = 'grid'
+    document.getElementById('editor').style.display = 'none'
+}
+
 

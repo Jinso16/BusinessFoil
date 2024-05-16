@@ -9,6 +9,14 @@
 
 .businessfoil {
     font-size: calc(15px + calc(3.2vw + 1.2vh));
+
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+.businessfoil:hover {
+    font-size: calc(15px + calc(3.3vw + 2.3vh));
 }
 
 .body {
@@ -17,6 +25,21 @@
     background-color: #F6F0EC;
     color: #3b3a39;
 }
+
+.body::-webkit-scrollbar {
+    background-color: #bba089;
+    
+}
+
+.body::-webkit-scrollbar-thumb {
+    background-color: #F6F0EC;
+    border: solid #bba089;
+    border-radius: 15px;
+    width: 6px;
+    
+}
+
+/* -------------------------------------------------------------------------------------- */
 
 .cabecalho {
     display: flex;
@@ -82,11 +105,23 @@
     height: 30vh;
 }
 
+.ports {
+    display: flex;
+    background-color: #D1B7A1;
+    height: 100vh;
+}
+
+/* -------------------------------------------------------------------------------------- */
+
 .button {
     width: 20vw;
     height: 10vh;
     
     font-weight: 600;
+
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
 
     background-color: #F6F0EC;
     border: 1px solid #d3cecb;
@@ -94,6 +129,20 @@
 
     cursor: pointer;
 }
+
+.button:hover {
+    width: 20vw;
+    height: 10vh;
+    
+    font-weight: 600;
+
+    color: #fff;
+    background-color: #D1B7A1;
+    border: 2px solid #F6F0EC;
+    border-radius: 8px;
+
+    cursor: pointer;
+}   
 
 a {
     text-decoration: none;

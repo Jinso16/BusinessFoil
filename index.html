@@ -37,9 +37,13 @@
             <h2 class="desc">Crie seu próprio portifólio online.</h2>
         </div>
 
-        <div class="cadastro">
+        <div class="cadastro" id="cadastro">
             <a href="htmls/criar_conta.html"><button class="button"> Criar Conta </button></a>
             <a href="htmls/entrar.html"><button class="button"> Entrar</button></a>
+        </div>
+
+        <div class="ports">
+            
         </div>
         
 
@@ -51,7 +55,7 @@
                 document.getElementById("entrar_cab").innerHTML = localStorage.getItem('username')
                 document.getElementById("foto_perfil").src = "https://api.dicebear.com/8.x/" + type + "/svg?seed=" + seed + "&backgroundColor[]&fontWeight=700"
 
-                document.getElementById('lower').style.display = 'none'
+                document.getElementById('cadastr').style.display = 'none'
             }
             
         </script>

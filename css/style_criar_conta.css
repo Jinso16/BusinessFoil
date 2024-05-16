@@ -143,6 +143,8 @@ p {
     transition: 0.5s;
     outline: none;
 
+    cursor: pointer;
+
 }
 
 .input_submit:hover {

@@ -186,6 +186,8 @@ p {
     border-radius: 8px;
     border-style: solid;
     margin-top: 50px;
+
+    cursor: pointer;
 }
 
 .input_submit:hover {
